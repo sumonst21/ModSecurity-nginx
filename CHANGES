@@ -1,6 +1,18 @@
 v1.0.x - YYYY-MMM-DD (To be released)
 -------------------------------------
 
+ - Fix nginx not clearing body cache (caused by incomplete fix for #187)
+   [Issue #216 - @krewi1, @martinhsv]
+ - Fix config setting not respected: client_body_in_file_only on
+   [Issue #187 - @martinhsv]
+ - Fix audit_log not generated for disruptive actions 
+   [Issue #170, #2220, #2237 - @victorhora]
+ - Exit more gracefully if uri length is zero
+   [@martinhsv]
+
+v1.0.1 - 2019-Dec-16
+--------------------
+
  - Fixed obtaining of server_addr
    [Issue #167, #168 - @defanator]
  - Avoid processing of subrequests initiated by the error_page 
